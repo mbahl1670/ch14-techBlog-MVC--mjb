@@ -9,7 +9,7 @@
 ## Table of Contents
 * [Installation](#installation)
 * [Acceptance Criteria](#acceptance-criteria)
-* [Walkthrough Vido](#walkthrough-video)
+* [Heroku Link](#heroku-link)
 * [Screenshot of the Application](#screenshot-of-the-application)
 * [Git Repository](#git-repository)
 * [How this was accomplished](#how-this-was-accomplished)
@@ -21,7 +21,7 @@
 ## Acceptance Criteria
 * 
 
-## Walkthrough Video
+## Heroku Link
 
 
 ## Screenshot of the Application
