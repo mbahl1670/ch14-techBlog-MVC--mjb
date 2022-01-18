@@ -36,7 +36,7 @@ router.get('/:id', (req,res) => {
 // POST create a User route /api/users
 router.post('/', (req,res) => {
     User.create({
-        username: req.body.email,
+        username: req.body.username,
         email: req.body.email,
         password: req.body.password
     })
