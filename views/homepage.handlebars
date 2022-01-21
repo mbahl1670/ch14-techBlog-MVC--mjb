@@ -1,0 +1,14 @@
+<ol class="d-flex">
+    {{#each posts as |post|}}
+    <li>
+        <article class="post">
+            <div class="title">
+                {{title}}
+            </div>
+            <div>
+                {{created_at}}
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ol>

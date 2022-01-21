@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 0 40px;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
