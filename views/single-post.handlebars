@@ -11,7 +11,10 @@
             {{post.created_at}}
         </div>
         <div>
-            {{post.comment.comment_text}}
+            {{#each post.comments as |single-comment|}}
+            {{single-comment.comment_text}}
+            comment made by: {{single-comment.user.username}}
+            {{/each}}
         </div>
     </article>
 </article>
