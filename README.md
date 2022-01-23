@@ -63,7 +63,10 @@ This is a CMS-style blog site similiar to a Wordpress site, built from the back 
 https://nameless-gorge-60773.herokuapp.com/
 
 ## Screenshot of the Application
-
+![Screenshot (50)](https://user-images.githubusercontent.com/90292697/150701308-1d6a7852-4f17-4219-864c-1f4206c9cb78.png)
+![Screenshot (51)](https://user-images.githubusercontent.com/90292697/150701313-254e418c-ce81-4c89-b7fa-bc91bf4cc56f.png)
+![Screenshot (52)](https://user-images.githubusercontent.com/90292697/150701315-5e496b0f-5b8b-4d55-8e20-3994976e17f2.png)
+![Screenshot (53)](https://user-images.githubusercontent.com/90292697/150701317-60aaf8fa-3bbd-4df6-b478-3a2d49c66ffe.png)
 
 ## Git Repository
 https://github.com/mbahl1670/ch14-techBlogMVC-mjb
