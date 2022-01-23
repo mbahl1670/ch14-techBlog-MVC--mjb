@@ -28,7 +28,8 @@ Comment.init(
         },
         post_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            // in order to delete a post that has a comment associated with it, allowNull needed to be true
+            allowNull: true,
             references: {
                 model: 'post',
                 key: 'id'

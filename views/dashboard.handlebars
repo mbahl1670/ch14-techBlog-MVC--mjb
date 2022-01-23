@@ -20,27 +20,25 @@
   <ol>
     {{#each posts as |post|}}
     <li>
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">
         <article class="card">
             <h2>{{post.title}}</h2>
             <div>
                 {{post.content}}
             </div>
             <div>
-                Posted by: {{post.user.username}}
-            </div>
-            <div>
-                {{post.created_at}}
+                Posted by: {{post.user.username}} on {{format_date post.created_at}}
             </div>
             <div>
                 {{#each post.comments as |single-comment|}}
             <div>
                 {{single-comment.comment_text}}
-                :  comment made by: {{single-comment.user.username}} @ {{single-comment.created_at}}
+                :  comment made by: {{single-comment.user.username}} on {{format_date single-comment.created_at}}
             </div>
                 {{/each}}
             </div>
         </article>
-        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        </a>
     </li>
     {{/each}}
   </ol>
