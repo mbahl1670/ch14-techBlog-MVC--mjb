@@ -1,18 +1,5 @@
-<section class="border">
-    <h2>Create New Post</h2>
+<a href="/dashboard/new-post"><button type="submit" class="" id="post-prompt-button">Click to Create a New Post</button></a>
 
-    <form class="new-post-form">
-        <div>
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title">
-        </div>
-        <div>
-          <label for="post-content">Content</label>
-          <input type="text" id="post-content" name="post-content">
-        </div>
-        <button type="submit" class="btn" id="post-prompt-button">Click to Create a New Post</button>
-    </form>
-</section>
 
 {{#if posts.length}}
 <section class="">
@@ -30,12 +17,15 @@
             <div>
                 Posted by: {{post.user.username}} on {{format_date post.created_at}}
             </div>
+            {{#if post.comments.length}}
+            <h6>Comments:</h6>
+            {{/if}}
             <div>
                 {{#each post.comments as |single-comment|}}
-            <div>
+                <div class="comment">
                 {{single-comment.comment_text}}
-                :  comment made by: {{single-comment.user.username}} on {{format_date single-comment.created_at}}
-            </div>
+                :  comment made by {{single-comment.user.username}} on {{format_date single-comment.created_at}}
+                </div>
                 {{/each}}
             </div>
         </article>

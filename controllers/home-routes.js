@@ -5,7 +5,8 @@ const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
     Post.findAll({
-        attributes: ['title', 'created_at', 'id']
+        order: [['created_at', 'DESC']],
+        attributes: ['title', 'created_at', 'id', 'content']
     })
     .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain:true }));
@@ -68,5 +69,7 @@ router.get('/post/:id', withAuth, (req,res) => {
         res.status(500).json(err);
     });
 });
+
+
 
 module.exports = router;

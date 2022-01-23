@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
+        order: [['created_at', 'DESC']],
         where: {
             user_id: req.session.user_id
         },
@@ -72,6 +73,10 @@ router.get('/edit/:id', withAuth, (req, res) => {
       .catch(err => {
         res.status(500).json(err);
       });
+  });
+  
+  router.get('/new-post', (req, res) => {
+    res.render('new-post');
   });
 
 module.exports = router;
