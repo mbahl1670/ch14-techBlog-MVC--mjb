@@ -1,4 +1,4 @@
-<section>
+<section class="border">
     <h2>Create New Post</h2>
 
     <form class="new-post-form">
@@ -15,8 +15,9 @@
 </section>
 
 {{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
+<section class="">
+  <h2 class="p-5">Your Posts</h2>
+  
   <ol>
     {{#each posts as |post|}}
     <li>
