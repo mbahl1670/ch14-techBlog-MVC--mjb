@@ -60,7 +60,7 @@ This is a CMS-style blog site similiar to a Wordpress site, built from the back 
   * THEN I am automatically signed out of the site
 
 ## Heroku Link
-
+https://nameless-gorge-60773.herokuapp.com/
 
 ## Screenshot of the Application
 
